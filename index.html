@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Addition Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="score-box">
+        <div class="score">
+            <span>Problems Solved: </span>
+            <span id="problems-solved">0</span>
+        </div>
+        <div class="score">
+            <span>Current Streak: </span>
+            <span id="current-streak">0</span>
+        </div>
+        <div class="score">
+            <span>Longest Streak: </span>
+            <span id="longest-streak">0</span>
+        </div>
+    </div>
+    <div id="game-container">
+        <div id="carry-boxes" class="number-row">
+            <span class="empty-space"></span> <!-- Placeholder for alignment -->
+            <input type="text" maxlength="1" class="carry-input" id="carry-hundreds" disabled>
+            <input type="text" maxlength="1" class="carry-input" id="carry-tens" disabled>
+            <span class="empty-space"></span> <!-- Placeholder for carry-ones -->
+        </div>
+        <div id="number1-row" class="number-row">
+            <span class="empty-space"></span> <!-- Placeholder for alignment -->
+            <span id="number1-digit1" class="digit"></span>
+            <span id="number1-digit2" class="digit"></span>
+            <span id="number1-digit3" class="digit"></span>
+        </div>
+        <div id="number2-row" class="number-row">
+            <span class="plus-sign">+</span>
+            <span id="number2-digit1" class="digit"></span>
+            <span id="number2-digit2" class="digit"></span>
+            <span id="number2-digit3" class="digit"></span>
+        </div>
+        <hr>
+        <div id="answer-boxes" class="number-row">
+            <span class="empty-space"></span> <!-- Placeholder for alignment -->
+            <input type="text" maxlength="1" class="answer-input" id="answer-hundreds" disabled>
+            <input type="text" maxlength="1" class="answer-input" id="answer-tens" disabled>
+            <input type="text" maxlength="1" class="answer-input" id="answer-ones" disabled>
+        </div>
+        <p></p>
+        <button id="check-answer-btn" onclick="checkAnswer()">Check Answer</button>
+        <p id="feedback"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

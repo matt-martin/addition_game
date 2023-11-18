@@ -1,0 +1,61 @@
+#score-box {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.score {
+    text-align: center;
+}
+
+#game-container {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.number-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.digit {
+    width: 30px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.carry-input, .answer-input {
+    width: 20px; /* Reduced from 30px to 20px */
+    border: 1px solid #000;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.plus-sign {
+    width: 30px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+hr {
+    width: 120px;
+    margin: 5px auto;
+}
+
+.empty-space {
+    width: 30px;
+    margin-right: 5px;
+}
+
+input:disabled {
+    background-color: #f0f0f0;
+    color: #ccc;
+}
+
+input:not(:disabled) {
+    background-color: #ffffe0; /* Light yellow background for active input */
+    color: #000;
+}
