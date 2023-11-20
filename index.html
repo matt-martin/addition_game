@@ -23,8 +23,8 @@
         <h1>Math Mania!</h1>
         <div id="carry-boxes" class="number-row">
             <span class="empty-space"></span> <!-- Placeholder for alignment -->
-            <input type="text" maxlength="1" class="carry-input" id="carry-hundreds" disabled>
-            <input type="text" maxlength="1" class="carry-input" id="carry-tens" disabled>
+            <input type="number" maxlength="1" class="carry-input" id="carry-hundreds" disabled>
+            <input type="number" maxlength="1" class="carry-input" id="carry-tens" disabled>
             <span class="empty-space"></span> <!-- Placeholder for carry-ones -->
         </div>
         <div id="number1-row" class="number-row">
@@ -42,9 +42,9 @@
         <hr>
         <div id="answer-boxes" class="number-row">
             <span class="empty-space"></span> <!-- Placeholder for alignment -->
-            <input type="text" maxlength="1" class="answer-input" id="answer-hundreds" disabled>
-            <input type="text" maxlength="1" class="answer-input" id="answer-tens" disabled>
-            <input type="text" maxlength="1" class="answer-input" id="answer-ones" disabled>
+            <input type="number" maxlength="1" class="answer-input" id="answer-hundreds" disabled>
+            <input type="number" maxlength="1" class="answer-input" id="answer-tens" disabled>
+            <input type="number" maxlength="1" class="answer-input" id="answer-ones" disabled>
         </div>
         <p></p>
         <button id="check-answer-btn" onclick="checkAnswer()">Check Answer</button>
